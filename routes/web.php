@@ -18,3 +18,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/shopLogin', 'Auth\ShopLoginController@index')->name('shopLogin');
+Route::post('/shopLogin', 'Auth\ShopLoginController@post')->name('shopLogin');
